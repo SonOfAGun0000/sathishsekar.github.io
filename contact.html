@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Contact – Sathish Sekar</title>
-<link href="/images/Favicon.png" rel="icon">
+<link href="/images/Favicon.ico" rel="icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -36,6 +36,23 @@ nav{
   justify-content:space-between;
   align-items:center;
   font-family: "crimson-pro", serif;
+  position:sticky;
+  top:0;
+  z-index:999;
+  box-shadow:0 8px 20px rgba(0,0,0,.25);
+  border-radius: 0 0 10px 10px;
+}
+
+nav .Logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-left: -60px;
+}
+
+nav .Logo a{
+  text-decoration:none;
+  color:white;
 }
 
 nav a{
