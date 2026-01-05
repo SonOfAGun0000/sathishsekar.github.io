@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact – Sathish Sekar</title>
+<link href="/images/Favicon.png" rel="icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --wine:#7b1717;
+ --cream:#fbf4d7;
+}
+
+body{
+ margin:0;
+ background:var(--cream);
+ font-family:"Crimson Pro", serif;
+ color:#5b1a1a;
+ font-size: large;
+
+}
+
+/* NAVBAR */
+nav{
+  background:var(--wine);
+  color:#fff;
+  padding:18px 80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-family: "crimson-pro", serif;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:32px;
+  font-family: "crimson-pro", serif;
+  font-weight:600;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    color:var(--cream);
+    text-decoration:underline;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* HEADER */
+.header{
+ max-width:900px;
+ margin:auto;
+ padding:80px 40px;
+ text-align:center;
+}
+.header h1{
+ font-family:"crimson-pro", serif;
+ color:var(--wine);
+}
+.header p{
+ font-size:18px;
+}
+
+/* CONTACT GRID */
+.contact-wrap{
+ max-width:1100px;
+ margin:auto;
+ padding:60px 40px;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:60px;
+ align-items:center;
+}
+
+/* FORM */
+.form-box{
+ background:rgba(0,0,0,0.05);
+ padding:40px;
+ border-radius:20px;
+}
+.form-box h3{
+ font-family:"Crimson Pro", serif;
+}
+input,textarea{
+ width:100%;
+ padding:14px;
+ border-radius:8px;
+ border:none;
+ margin-bottom:16px;
+ font-family:"Crimson Pro", serif;
+}
+textarea{height:120px;}
+button{
+ border:2px solid var(--wine);
+ background:transparent;
+ padding:12px 30px;
+ border-radius:40px;
+ font-weight:600;
+ cursor:pointer;
+}
+button:hover{
+ background:var(--wine);
+ color:white;
+ transition: all 0.3s ease-in-out;
+ cursor: pointer;
+}
+
+/* INFO */
+.info h2{
+ font-family:"Crimson Pro", serif;
+ color:var(--wine);
+}
+.info div{
+ margin-bottom:20px;
+ font-size:18px;
+}
+.info a{
+  color:var(--wine);
+  text-decoration:none;
+  font-weight:600;
+  transition: all 0.3s ease-in-out;
+}
+.info a:hover{
+    text-decoration:underline;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+  }
+
+/* SOCIAL */
+.social{
+ text-align:center;
+ padding:80px 40px;
+}
+.social h2{
+ font-family:"Crimson Pro", serif;
+ color:var(--wine);
+}
+.social a{
+ font-size:36px;
+ margin:0 18px;
+ color:var(--wine);
+ text-decoration:none;
+}
+.social a:hover{
+  color:#5b1a1a;
+  transition: all 0.3s ease-in-out;
+}
+
+.line-md--instagram::after {
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+  vertical-align: -0.125em;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%237b1717' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke-dasharray='66' d='M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='1.2s' values='66;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='28' stroke-dashoffset='28' d='M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='1.4s' dur='1.2s' to='0'/%3E%3C/path%3E%3C/g%3E%3Ccircle cx='17' cy='7' r='1.5' fill='%237b1717' opacity='0'%3E%3Canimate fill='freeze' attributeName='opacity' begin='2.6s' dur='0.4s' to='1'/%3E%3C/circle%3E%3C/svg%3E");
+}
+
+.line-md--github-twotone::after {
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+  vertical-align: -0.125em;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%237b1717' fill-opacity='0' d='M15 4.5c-0.39 -0.1 -1.33 -0.5 -3 -0.5c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5v4h6v-4c0 -0.63 0.15 -1.96 -0.5 -2.5c1.39 -0.13 2.48 -0.58 3.5 -1.5c1.02 -0.92 1.5 -2.31 1.5 -4.5c0 -1.5 -0.25 -2.5 -1 -3.5c0.29 -0.78 0.34 -2 0 -3c-1.56 0 -2.97 1.07 -3.5 1.5Z'%3E%3Canimate fill='freeze' attributeName='fill-opacity' begin='0.9s' dur='0.15s' to='0.3'/%3E%3C/path%3E%3Cg fill='none' stroke='%237b1717' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke-dasharray='32' d='M12 4c1.67 0 2.61 0.4 3 0.5c0.53 -0.43 1.94 -1.5 3.5 -1.5c0.34 1 0.29 2.22 0 3c0.75 1 1 2 1 3.5c0 2.19 -0.48 3.58 -1.5 4.5c-1.02 0.92 -2.11 1.37 -3.5 1.5c0.65 0.54 0.5 1.87 0.5 2.5c0 0.73 0 3 0 3M12 4c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5c0 0.73 0 3 0 3'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.6s' values='32;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='10' stroke-dashoffset='10' d='M9 19c-1.41 0 -2.84 -0.56 -3.69 -1.19c-0.84 -0.63 -1.09 -1.66 -2.31 -2.31'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.7s' dur='0.2s' to='0'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.line-md--linkedin::after {
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+  vertical-align: -0.125em;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='4' cy='4' r='2' fill='%237b1717' opacity='0'%3E%3Canimate fill='freeze' attributeName='opacity' dur='0.2s' to='1'/%3E%3C/circle%3E%3Cg fill='none' stroke='%237b1717' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'%3E%3Cg stroke-dasharray='12' stroke-dashoffset='12'%3E%3Cpath d='M4 10v10'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.2s' dur='0.2s' to='0'/%3E%3C/path%3E%3Cpath d='M10 10v10'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.5s' dur='0.2s' to='0'/%3E%3C/path%3E%3C/g%3E%3Cpath stroke-dasharray='24' stroke-dashoffset='24' d='M10 15c0 -2.76 2.24 -5 5 -5c2.76 0 5 2.24 5 5v5'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.7s' dur='0.3s' to='0'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* FOOTER */
+.site-footer{
+  background:#7b1717;
+  color:#fff;
+  padding:60px 40px 20px;
+  margin-top:100px;
+  font-family:"crimson-pro", serif;
+}
+
+.footer-wrap{
+  max-width:auto;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:40px;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  opacity: 0.7;
+}
+
+.site-footer a{
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  margin:6px 0;
+}
+
+.site-footer h3,h4{
+  font-size: larger;
+}
+
+.site-footer a:hover{
+  opacity:.7
+}
+
+.copy{
+  text-align:center;
+  margin-top:60px;
+  font-size:18px;
+  opacity:.5;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+ <div style="display:flex; align-items:center; gap:10px;" class="Logo" href="index.html">
+  <img src="./images/Favicon.png" alt="Sathish C Logo" style="height:40px; width:auto;"> 
+  <strong style="font-size: 32px;">Sathish C</strong>
+ </div>
+ <div>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="#" style="text-decoration: overline 5px var(--cream); font-size: 26px; font-family: 'Crimson Pro', serif">Contact</a>
+  <a href="resume.html">Resume</a>
+ </div>
+</nav>
+
+<section class="header">
+ <h1>Let’s Connect!!!</h1>
+ <p>
+ Whether you have an idea, a project, or just want to say hi — I’m always open to conversations.
+ Drop a message below or reach out through any of my links.
+ </p>
+</section>
+
+<section class="contact-wrap">
+
+<form class="form-box" action="https://formsubmit.co/sathishsekar0000@gmail.com" method="POST">
+  <h3>Hey...<br>Drop me a Message...</h3>
+
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email Address" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <button type="submit">Submit</button>
+</form>
+
+
+ <div class="info">
+  <h2>Contact Info</h2>
+  <div><a href="mailto:sathishsekar0000@gmail.com" target="_blank">📧 Email: sathishsekar0000@gmail.com</a></div>
+  <div><a href="tel:+918807678247" target="_blank">📍 Location: Coimbatore, Tamil Nadu, India</a></div>
+  <div><a href="tel:+918807678247" target="_blank">📞 Phone: +91 88076 78247</a></div>
+ </div>
+
+</section>
+
+<section class="social">
+ <h2>Social Links</h2>
+ <a href="https://www.linkedin.com/in/sathish-sekar-48533a27b/" target="_blank"><span class="line-md--linkedin"></span></a>
+ <a href="https://github.com/SonOfAGun0000" target="_blank"><span class="line-md--github-twotone"></span></a>
+ <a href="https://www.instagram.com/its_me_son_of_a_gun/" target="_blank"><span class="line-md--instagram"></span></a>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div style="text-align:left">
+      <h1>Sathish Sekar</h1>
+      <p>UI/UX & Web Developer from Coimbatore.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:sathishsekar0000@gmail.com&subject=Hello about the portfolio!&body=Hi">📧 sathishsekar0000@gmail.com</a>
+      <a href="tel:+918807678247">📞 +91 88076 78247</a>
+      <a href="https://www.google.com/maps/place/Coimbatore,+Tamil+Nadu/" target="_blank">📍 Coimbatore, Tamil Nadu - 641025 </a>
+    </div>
+
+    <div>
+      <h4>Social</h4>
+      <a href="https://www.linkedin.com/in/sathish-sekar-48533a27b/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/SonOfAGun0000" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/its_me_son_of_a_gun/" target="_blank">Instagram</a>
+    </div>
+  </div>
+  <div class="copy">
+    © 2026 Sathish Sekar • Built with care in Coimbatore
+  </div>
+</footer>
+
+</body>
+</html>

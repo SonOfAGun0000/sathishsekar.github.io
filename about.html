@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About – Sathish Sekar</title>
+<link href="/images/Favicon.png" rel="icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+:root{
+  --wine:#7b1717;
+  --cream:#fbf4d7;
+}
+
+body{
+  margin:0;
+  background:var(--cream);
+  font-family:"crimson-pro", sans-serif;
+  color:#5b1a1a;
+  font-size: large;
+}
+
+/* NAVBAR */
+nav{
+  background:var(--wine);
+  color:#fff;
+  padding:18px 80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-family: "crimson-pro", serif;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:32px;
+  font-family: "crimson-pro", serif;
+  font-weight:600;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    color:var(--cream);
+    text-decoration:underline;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* PAGE */
+.page{
+  max-width:1000px;
+  margin:auto;
+  padding:80px 40px;
+}
+
+h1,h2{
+  font-family:"Crimson Pro", serif;
+  color:var(--wine);
+  text-align:center;
+  font-size: 42px;
+}
+
+blockquote{
+  text-align:center;
+  font-family: "Caveat", cursive;
+  font-size:32px;
+}
+
+/* SECTIONS */
+.section{
+  margin:80px 0;
+  line-height:1.8;
+}
+
+ul{margin-left:20px}
+
+/* CHART */
+.chart-box{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+}
+
+/* FOOTER */
+.site-footer{
+  background:#7b1717;
+  color:#fff;
+  padding:60px 40px 20px;
+  margin-top:100px;
+  font-family:"crimson-pro", serif;
+}
+
+.footer-wrap{
+  max-width:auto;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:40px;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  opacity: 0.7;
+}
+
+.site-footer a{
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  margin:6px 0;
+}
+
+.site-footer h3,h4{
+  font-size: larger;
+}
+
+.site-footer a:hover{
+  opacity:.7
+}
+
+.copy{
+  text-align:center;
+  margin-top:60px;
+  font-size:18px;
+  opacity:.5;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+ <div style="display:flex; align-items:center; gap:10px;" class="Logo" href="index.html">
+  <img src="./images/Favicon.png" alt="Sathish C Logo" style="height:40px; width:auto;"> 
+  <strong style="font-size: 32px;">Sathish C</strong>
+ </div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="#" style="text-decoration: overline 5px var(--cream); font-size: 26px; font-family: 'Crimson Pro', serif">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+  </div>
+</nav>
+
+<div class="page">
+
+<h1>ABOUT ME</h1>
+<blockquote>
+I didn’t start in tech. But I always believed that things can be done better — and that led me here.
+</blockquote>
+
+<div class="section">
+Hi, I’m Sathish Sekar — a self-taught UI/UX Developer from Coimbatore, Tamil Nadu.<br><br>
+My story is not from a tech company or design agency. I started my career in the real world — working full-time in a supermarket, managing sales, people, and everyday operations.<br><br>
+But in the middle of all that, I was always curious about how things work behind the scenes, especially when it came to digital systems and user experience.
+</div>
+
+<h2>How It Started</h2>
+<div class="section">
+I completed my BCA and then an MBA, thinking I’d end up in a corporate job. But life took a different turn. I got hands-on with running a store — which taught me more than any classroom ever could. I learned how people behave, how small mistakes affect experience, and how simple systems can either make or break daily tasks.<br><br>
+That’s when I started getting interested in design. I used to think, “Why are things still so hard to use?” That thought stuck with me.<br><br>
+So I started learning design tools, web development, and how great apps are built. It started small — with YouTube videos, small Figma practice files, and trying out my ideas after work. Over time, that interest became a serious goal.</div>
+
+<h2>My Growth Curve</h2>
+<div class="chart-box">
+<canvas id="growthChart"></canvas>
+</div>
+
+<h2>What I Do Now</h2>
+<div class="section">
+I design and build websites that are clean, simple, and user-friendly. I focus on UI/UX because I’ve seen first-hand how good design makes a real difference. My designs are practical — no fluff, just what the user needs.<br><br>
+I mostly work with:
+<ul>
+<li>Figma for design</li>
+<li>HTML, CSS, basic JavaScript</li>
+<li>Bootstrap for fast layouts</li>
+<li>Canva & Filmora</li>
+<li>VS Code & GitHub</li>
+</ul>
+I like learning new tools, solving real problems, and improving my work every step of the way.
+</div>
+
+<h2>Why I’m Different</h2>
+<div class="section">
+I’ve seen what it’s like when systems don’t work for people. I don’t just design things that look good — I design with clarity, purpose, and usability in mind.<br><br>
+I’ve worked with people. I’ve managed a business. I understand how design connects with goals — and I bring that into every project.
+</div>
+
+<h2>A bit more about ME</h2>
+<div class="section">
+<ul>
+<li>I’m currently building my portfolio and learning full-stack development</li>
+<li>I enjoy gaming on my PS4 to unwind</li>
+<li>I believe every day is a chance to improve</li>
+</ul>
+</div>
+
+<h2>Let’s Connect</h2>
+<div class="section">
+If you’re looking for someone who’s serious about learning, growing, and building meaningful designs — I’m here.<br>
+Check out my Projects, download my Resume, or Contact me. I’m always open to opportunities, feedback, or just a good chat.
+</div>
+
+</div>
+
+<script>
+new Chart(document.getElementById('growthChart'),{
+ type:'bar',
+ data:{
+  labels:['Business','UI/UX','Frontend','Full-Stack'],
+  datasets:[{
+    data:[85,95,60,40],
+    backgroundColor:['#b34b4b','#d97706','#eab308','#7b1717'],
+    borderRadius:12
+  }]
+ },
+//  Load on scroll
+responsive:true,
+ options:{plugins:{legend:{display:false}},scales:{y:{display:false}}}
+});
+</script>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div style="text-align:left">
+      <h1>Sathish Sekar</h1>
+      <p>UI/UX & Web Developer from Coimbatore.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:sathishsekar0000@gmail.com&subject=Hello about the portfolio!&body=Hi">📧 sathishsekar0000@gmail.com</a>
+      <a href="tel:+918807678247">📞 +91 88076 78247</a>
+      <a href="https://www.google.com/maps/place/Coimbatore,+Tamil+Nadu/" target="_blank">📍 Coimbatore, Tamil Nadu - 641025 </a>
+    </div>
+
+    <div>
+      <h4>Social</h4>
+      <a href="https://www.linkedin.com/in/sathish-sekar-48533a27b/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/SonOfAGun0000" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/its_me_son_of_a_gun/" target="_blank">Instagram</a>
+    </div>
+  </div>
+  <div class="copy">
+    © 2026 Sathish Sekar • Built with care in Coimbatore
+  </div>
+</footer>
+
+</body>
+</html>
