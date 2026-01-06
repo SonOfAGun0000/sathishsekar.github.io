@@ -3,96 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <title>About – Sathish Sekar</title>
-<meta name="viewport" content="width=1200">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Sathish Sekar is a UI/UX and Web Developer from Coimbatore who builds clean, fast, and user-friendly websites for small businesses.">
 <meta name="keywords" content="Sathish Sekar, UI/UX Designer, Web Developer, Portfolio, Frontend Developer, User Experience, User Interface, Web Design">
 <meta name="author" content="Sathish Sekar">
-<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?">
 
+<!-- -------------------------------------CSS---------------------------------- -->
 <style>
-:root{
-  --wine:#7b1717;
-  --cream:#fbf4d7;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body{
-  margin:0;
-  background:var(--cream);
-  font-family:"crimson-pro", sans-serif;
-  color:#5b1a1a;
-  font-size: large;
-}
-
-/* NAVBAR */
-nav{
-  background:var(--wine);
-  color:#fff;
-  padding:18px 80px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  font-family: "crimson-pro", serif;
-  position:sticky;
-  top:0;
-  z-index:999;
-  box-shadow:0 8px 20px rgba(0,0,0,.25);
-  border-radius: 0 0 10px 10px;
-
-}
-
-nav .Logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin-left: -60px;
-}
-
-nav .Logo a{
-  text-decoration:none;
-  color:white;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:32px;
-  font-family: "crimson-pro", serif;
-  font-weight:600;
-  transition: all 0.3s ease-in-out;
-  &:hover{
-    color:var(--cream);
-    text-decoration:underline;
-    transition: all 0.3s ease-in-out;
-  }
-}
-
-/* PAGE */
-.page{
-  max-width:1000px;
-  margin:auto;
-  padding:80px 40px;
-}
 
 h1,h2{
   font-family:"Crimson Pro", serif;
   color:var(--wine);
   text-align:center;
   font-size: 42px;
-}
-
-blockquote{
-  text-align:center;
-  font-family: "Caveat", cursive;
-  font-size:32px;
 }
 
 /* SECTIONS */
@@ -102,7 +31,6 @@ blockquote{
   font-family:"Crimson Pro", serif;
   font-size:22px;
 }
-
 ul{
   margin-left:20px
 }
@@ -114,88 +42,8 @@ ul{
   border-radius:20px;
   box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
-
-/* FOOTER */
-.site-footer{
-  background:#7b1717;
-  color:#fff;
-  padding:60px 40px 20px;
-  margin-top:100px;
-  font-family:"crimson-pro", serif;
-}
-
-.footer-wrap{
-  max-width:auto;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:40px;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  opacity: 0.7;
-}
-.footer-title{
-  font-size: 20px;
-  font-weight: 600;
-  text-align: left;
-}
-
-.site-footer a{
-  display:block;
-  color:#fff;
-  text-decoration:none;
-  margin:6px 0;
-}
-
-.site-footer h3,h4{
-  font-size: larger;
-}
-
-.site-footer a:hover{
-  opacity:.7
-}
-
-.copy{
-  text-align:center;
-  margin-top:60px;
-  font-size:18px;
-  opacity:.5;
-}
-/* whatsapp float css */
-.whatsapp-float{
-  position:fixed;
-  bottom:26px;
-  right:26px;
-  width:64px;
-  height:64px;
-  background:#25D366;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 14px 28px rgba(0,0,0,.28);
-  z-index:9999;
-  border:4px solid var(--cream);
-  transition:transform .25s ease, box-shadow .25s ease;
-}
-.whatsapp-float:hover{
-  transform:scale(1.12);
-  box-shadow:0 20px 40px rgba(0,0,0,.4);
-}
-
-/* animation */
-.reveal{
-  opacity:0;
-  transform:translateY(40px);
-  transition:opacity .8s ease, transform .8s ease;
-}
-.reveal.active{
-  opacity:1;
-  transform:none;
-}
-
 </style>
+<!-- ----------------------------------End of CSS------------------------------ -->
 </head>
 
 <body>
@@ -234,7 +82,7 @@ That’s when I started getting interested in design. I used to think, “Why ar
 So I started learning design tools, web development, and how great apps are built. It started small — with YouTube videos, small Figma practice files, and trying out my ideas after work. Over time, that interest became a serious goal.</div>
 
 <h2>My Growth Curve</h2>
-<div class="chart-box reveal">
+<div class="chart-box reveal glow">
 <canvas id="growthChart"></canvas>
 </div>
 
@@ -275,23 +123,6 @@ Check out my Projects, download my Resume, or Contact me. I’m always open to o
 
 </div>
 
-<script>
-new Chart(document.getElementById('growthChart'),{
- type:'bar',
- data:{
-  labels:['Business','UI/UX','Frontend','Full-Stack'],
-  datasets:[{
-    data:[85,95,60,40],
-    backgroundColor:['#b34b4b','#d97706','#eab308','#7b1717'],
-    borderRadius:12
-  }]
- },
-//  Load on scroll
-responsive:true,
- options:{plugins:{legend:{display:false}},scales:{y:{display:false}}}
-});
-</script>
-
 <footer class="site-footer">
   <div class="footer-wrap">
     <div class="footer-title">
@@ -311,7 +142,7 @@ responsive:true,
 
     <div>
       <h4>Contact</h4>
-      <a href="mailto:sathishsekar0000@gmail.com&subject=Hello about the portfolio!&body=Hi">📧 sathishsekar0000@gmail.com</a>
+      <a href="mailto:sathishsekar0000@gmail.com?subject=Hello%20about%20the%20portfolio!&body=Hi">📧 sathishsekar0000@gmail.com</a>
       <a href="tel:+918807678247">📞 +91 88076 78247</a>
       <a href="https://www.google.com/maps/place/Coimbatore,+Tamil+Nadu/" target="_blank">📍 Coimbatore, Tamil Nadu - 641025 </a>
     </div>
@@ -336,7 +167,34 @@ responsive:true,
 </svg>
 </a>
 
-<!-- animation JS -->
+<!-- Page The Transition Loader System -->
+<div class="page-loader" id="loader">
+  <img src="images/Favicon.png" alt="Loading">
+</div>
+
+<!-- -----------------------------------------scripts JS------------------------------- -->
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Chart JS -->
+<script>
+new Chart(document.getElementById('growthChart'),{
+ type:'bar',
+ data:{
+  labels:['Business','UI/UX','Frontend','Full-Stack'],
+  datasets:[{
+    data:[85,95,60,40],
+    backgroundColor:['#b34b4b','#d97706','#eab308','#7b1717'],
+    borderRadius:12
+  }]
+ },
+//  Load on scroll
+responsive:true,
+ options:{plugins:{legend:{display:false}},scales:{y:{display:false}}}
+});
+</script>
+
+<!-- animation JS
 <script>
 const observer = new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
@@ -347,7 +205,20 @@ const observer = new IntersectionObserver(entries=>{
 });
 
 document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-</script>
+</script> -->
+
+<!-- Page The Transition Loader System JS
+<script>
+document.querySelectorAll("a[href]").forEach(link=>{
+  if(link.href.includes(location.hostname)){
+    link.addEventListener("click",e=>{
+      e.preventDefault();
+      document.getElementById("loader").classList.add("active");
+      setTimeout(()=>location.href=link.href,300);
+    });
+  }
+});
+</script> -->
 
 </body>
 </html>

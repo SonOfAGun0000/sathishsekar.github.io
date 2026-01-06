@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Sathish Sekar – Web Developer</title>
-<meta name="viewport" content="width=1200">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Sathish Sekar is a UI/UX and Web Developer from Coimbatore who builds clean, fast, and user-friendly websites for small businesses.">
 <meta name="keywords" content="Sathish Sekar, UI/UX Designer, Web Developer, Portfolio, Frontend Developer, User Experience, User Interface, Web Design">
 <meta name="author" content="Sathish Sekar">
@@ -11,281 +11,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?">
+<link rel="stylesheet" href="css/main.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?">
 
-<style>
-
-:root{
-  --wine:#7b1717;
-  --cream:#fbf4d7;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body{
-  margin:0;
-  background:var(--cream);
-  font-family:"crimson-pro", sans-serif;
-  color:#5b1a1a;
-  font-size: large;
-}
-
-/* NAVBAR */
-nav{
-  background:var(--wine);
-  color:#fff;
-  padding:18px 80px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  font-family: "crimson-pro", serif;
-  position:sticky;
-  top:0;
-  z-index:999;
-  box-shadow:0 8px 20px rgba(0,0,0,.25);
-  border-radius: 0 0 10px 10px;
-}
-
-nav .Logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin-left: -60px;
-}
-
-nav .Logo a{
-  text-decoration:none;
-  color:white;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:32px;
-  font-family: "crimson-pro", serif;
-  font-weight:600;
-  transition: all 0.3s ease-in-out;
-}
-
-nav a:hover{
-  color:var(--cream);
-  text-decoration:underline;
-}
-
-/* HERO */
-.hero{
-  max-width:1200px;
-  margin:auto;
-  padding:80px;
-  display:grid;
-  grid-template-columns:1fr 420px;
-  gap:40px;
-  align-items:top;
-}
-
-.hero h1{
-  font-family:"crimson-pro", serif;
-  font-size:84px;
-  margin:10px 0;
-  color:var(--wine);
-}
-
-.hero .small{
-  letter-spacing:2px;
-}
-
-.hero .tagline{
-  font-family:"crimson-pro", serif;
-  font-size:32px;
-  margin-bottom:30px;
-}
-
-.about-box{
-  border:2px solid var(--wine);
-  border-radius:18px;
-  padding:30px;
-  margin:30px 0;
-  font-family:"crimson-pro", serif;
-  font-size:22px;
-  line-height:1.7;
-}
-.btns{
-  margin-top:30px;
-}
-.btns a{
-  border:2px solid var(--wine);
-  border-bottom: 10px;
-  padding:14px 28px 14px 28px;
-  border-radius:40px;
-  text-decoration:none;
-  color:var(--wine);
-  margin-bottom: 20px;
-  margin-right:16px;
-  display:inline-block;
-  line-height: 1.4;
-  font-weight:600;
-}
-
-.btns a:hover{
-  background:var(--wine);
-  color:white;
-  cursor:pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-/* IMAGE */
-.photo{
-  width:100%;
-  aspect-ratio:1/1.25;
-  border-radius:50%;
-  overflow:hidden;
-  border:6px solid var(--wine);
-}
-.photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-/* SKILLS */
-.skills{
-  text-align:center;
-  padding:80px 40px;
-}
-.skills h2{
-  font-family:"Crimson Pro", serif;
-  color:var(--wine);
-  letter-spacing:6px;
-  margin-bottom:50px;
-}
-.skill-grid{
-  max-width:900px; 
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-  gap:30px;
-  justify-content:center;
-  margin:auto;
-}
-.skill-card{
-  text-align:center;
-  border:2px solid var(--wine);
-  padding:25px;
-  border-radius:16px;
-  font-family:"crimson-pro", serif;
-  font-size:30px;
-  background:white;
-}
-.skill-card:hover{
-  background:var(--wine);
-  color:white;
-  cursor:pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow:15px 15px 15px 15px #7b1717(0.3,0.3,0.3,0.3);
-}
-
-/* QUOTE */
-.quote{
-  background:var(--wine);
-  color:white;
-  max-width:1000px;
-  margin:80px auto;
-  padding:40px 60px;
-  border-radius:20px;
-  text-align:center;
-  box-shadow:0 15px 30px rgba(0,0,0,0.3);
-}
-
-.quote p{
-  font-family:"crimson-pro", serif;
-  font-size:36px;
-  line-height:1.6;
-}
-
-.quote span{
-  display:block;
-  margin-top:10px;
-  font-size:22px;
-}
-
-/* FOOTER */
-.site-footer{
-  background:#7b1717;
-  color:#fff;
-  padding:60px 40px 20px;
-  margin-top:100px;
-  font-family:"crimson-pro", serif;
-}
-
-.footer-wrap{
-  max-width:auto;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:40px;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  opacity: 0.7;
-}
-
-.site-footer a{
-  display:block;
-  color:#fff;
-  text-decoration:none;
-  margin:6px 0;
-}
-
-.site-footer h3,h4{
-  font-size: larger;
-}
-
-.site-footer a:hover{
-  opacity:.7
-}
-
-.copy{
-  text-align:center;
-  margin-top:60px;
-  font-size:18px;
-  opacity:.5;
-}
-
-/* whatsapp float css */
-.whatsapp-float{
-  position:fixed;
-  bottom:26px;
-  right:26px;
-  width:64px;
-  height:64px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 14px 28px rgba(0,0,0,.28);
-  z-index:9999;
-  transition:transform .25s ease, box-shadow .25s ease;
-}
-.whatsapp-float:hover{
-  transform:scale(1.12);
-  box-shadow:0 20px 40px rgba(0,0,0,.4);
-}
-
-/* animation */
-.reveal{
-  opacity:0;
-  transform:translateY(40px);
-  transition:opacity .8s ease, transform .8s ease;
-}
-.reveal.active{
-  opacity:1;
-  transform:none;
-}
-
-</style>
 </head>
-
 
 <body>
 <nav>
@@ -308,21 +37,21 @@ nav a:hover{
     <h1>Sathish C</h1>
     <div class="tagline">a UI/UX Developer with a passion for clean, human-centered design.</div>
 
-    <div class="about-box">
+    <div class="about-box glow wave">
       I blend technology, creativity, and empathy to craft interfaces that not only look great
       but also feel right. With a background in computer applications and business management,
       I understand both sides of the screen — the user’s journey and the business goal.
     </div>
 
     <div class="btns">
-      <a href="projects.html">View My Work</a>
-      <a href="services.html">View Services</a>
-      <a href="files/Sathish-Sekar-Resume.pdf" download>Download Resume</a>
-      <a href="contact.html">Let’s Connect</a>
+      <a href="projects.html" class="glow">View My Work</a>
+      <a href="services.html" class="glow">View Services</a>
+      <a href="files/Sathish-Sekar-Resume.pdf" download class="glow">Download Resume</a>
+      <a href="contact.html" class="glow">Let’s Connect</a>
     </div>
   </div>
 
-  <div class="photo">
+  <div class="photo glow">
     <img src="images/sathishsekarphoto.webp" alt="Sathish Sekar Photo">
   </div>
 </section>
@@ -331,15 +60,15 @@ nav a:hover{
   <h2 style="font-size: 56px;">Skills Snapshot</h2>
 
   <div class="skill-grid">
-    <div class="skill-card">UI Design ✏️</div>
-    <div class="skill-card">UX Research 🧠</div>
-    <div class="skill-card">Frontend Coding 💻</div>
-    <div class="skill-card">Tools & Softwares 🛠️</div>
-    <div class="skill-card">Collaboration 🤝</div>
+    <div class="skill-card glow wave">UI Design ✏️</div>
+    <div class="skill-card glow wave">UX Research 🧠</div>
+    <div class="skill-card glow wave">Frontend Coding 💻</div>
+    <div class="skill-card glow wave">Tools & Softwares 🛠️</div>
+    <div class="skill-card glow wave">Collaboration 🤝</div>
   </div>
 </section>
 
-<section class="quote reveal">
+<section class="quote reveal glow">
   <p>
     “Design is not just what it <b>looks</b> like.<br>
     Design is how it <b>works</b>.”<br>
@@ -350,6 +79,7 @@ nav a:hover{
 <!-- footer -->
 <footer class="site-footer">
   <div class="footer-wrap">
+
     <div style="text-align:left">
       <h1>Sathish Sekar</h1>
       <p>UI/UX & Web Developer from Coimbatore.</p>
@@ -364,9 +94,10 @@ nav a:hover{
         <a href="contact.html">Contact</a>
         <a href="resume.html">Resume</a>
     </div>
+
     <div>
       <h4>Contact</h4>
-      <a href="mailto:sathishsekar0000@gmail.com&subject=Hello about the portfolio!&body=Hi">📧 sathishsekar0000@gmail.com</a>
+      <a href="mailto:sathishsekar0000@gmail.com?subject=Hello%20about%20the%20portfolio!&body=Hi">📧 sathishsekar0000@gmail.com</a>
       <a href="tel:+918807678247">📞 +91 88076 78247</a>
       <a href="https://www.google.com/maps/place/Coimbatore,+Tamil+Nadu/" target="_blank">📍 Coimbatore, Tamil Nadu - 641025 </a>
     </div>
@@ -377,6 +108,7 @@ nav a:hover{
       <a href="https://github.com/SonOfAGun0000" target="_blank">GitHub</a>
       <a href="https://www.instagram.com/its_me_son_of_a_gun/" target="_blank">Instagram</a>
     </div>
+
   </div>
   <div class="copy">
     © 2026 Sathish Sekar • Built with care in Coimbatore
@@ -391,7 +123,17 @@ nav a:hover{
 </svg>
 </a>
 
-<!-- animation JS -->
+<!-- Page The Transition Loader System -->
+<div class="page-loader" id="loader">
+  <img src="images/Favicon.png" alt="Loading">
+</div>
+
+<!-- <div class="cursor"></div> -->
+
+<!-- ----------------------------------------Scripts JS------------------------------------------ -->
+<script src="js/main.js"></script>
+
+<!-- IntersectionObserver reveal animation JS
 <script>
 const observer = new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
@@ -402,7 +144,34 @@ const observer = new IntersectionObserver(entries=>{
 });
 
 document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-</script>
+</script> -->
+
+<!-- The Page Transition Loader System JS
+<script>
+document.querySelectorAll('a[href]').forEach(link=>{
+  const href = link.getAttribute('href');
+  if(!href) return;
+  // Skip anchors, mailto, tel, external links, and javascript:
+  if(href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return;
+  const isInternal = link.hostname === location.hostname;
+  if(isInternal){
+    link.addEventListener('click', e=>{
+      if(e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return; // allow new tab / modifiers
+      e.preventDefault();
+      document.getElementById('loader').classList.add('active');
+      setTimeout(()=> location.href = link.href, 300);
+    });
+  }
+});
+</script> -->
+
+<!-- cursor JS
+<script>
+document.addEventListener("mousemove",e=>{
+  document.querySelector(".cursor").style.left=e.clientX+"px";
+  document.querySelector(".cursor").style.top=e.clientY+"px";
+});
+</script> -->
 
 </body>
 </html>
