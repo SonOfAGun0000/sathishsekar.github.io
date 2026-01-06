@@ -272,6 +272,17 @@ nav a:hover{
   box-shadow:0 20px 40px rgba(0,0,0,.4);
 }
 
+/* animation */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:opacity .8s ease, transform .8s ease;
+}
+.reveal.active{
+  opacity:1;
+  transform:none;
+}
+
 </style>
 </head>
 
@@ -291,7 +302,7 @@ nav a:hover{
   </div>
 </nav>
 
-<section class="hero">
+<section class="hero reveal">
   <div>
     <div class="small">HEY, I’M</div>
     <h1>Sathish C</h1>
@@ -304,9 +315,10 @@ nav a:hover{
     </div>
 
     <div class="btns">
-      <a href="projects.html#projects">View My Work</a>
-      <a href="resume.html#resume">Download Resume</a>
-      <a href="contact.html#contact">Let’s Connect</a>
+      <a href="projects.html">View My Work</a>
+      <a href="services.html">View Services</a>
+      <a href="files/Sathish-Sekar-Resume.pdf" download>Download Resume</a>
+      <a href="contact.html">Let’s Connect</a>
     </div>
   </div>
 
@@ -315,7 +327,7 @@ nav a:hover{
   </div>
 </section>
 
-<section class="skills">
+<section class="skills reveal">
   <h2 style="font-size: 56px;">Skills Snapshot</h2>
 
   <div class="skill-grid">
@@ -327,7 +339,7 @@ nav a:hover{
   </div>
 </section>
 
-<section class="quote">
+<section class="quote reveal">
   <p>
     “Design is not just what it <b>looks</b> like.<br>
     Design is how it <b>works</b>.”<br>
@@ -345,13 +357,13 @@ nav a:hover{
 
     <div>
       <h4>Quick Links</h4>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-      <a href="resume.html">Resume</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="resume.html">Resume</a>
     </div>
-
     <div>
       <h4>Contact</h4>
       <a href="mailto:sathishsekar0000@gmail.com&subject=Hello about the portfolio!&body=Hi">📧 sathishsekar0000@gmail.com</a>
@@ -379,6 +391,18 @@ nav a:hover{
 </svg>
 </a>
 
+<!-- animation JS -->
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("active");
+    }
+  });
+});
+
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+</script>
 
 </body>
 </html>
