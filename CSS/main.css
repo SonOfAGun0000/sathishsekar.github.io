@@ -733,7 +733,7 @@ The Page Transition Loader System
   .resume-img{margin-bottom:60px; width: 90%;}
 }
 
-@media(max-width:480px){
+@media(max-width:425px){
   nav{
     padding:14px 16px;
   }
@@ -753,4 +753,5 @@ The Page Transition Loader System
   .hero .tagline{font-size:20px}
   .quote {margin: 40px 10px 30px 10px;}
   .quote p{font-size:24px}
+
 }
