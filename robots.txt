@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sonofagun0000.github.io/sathishsekar.github.io/sitemap.xml
