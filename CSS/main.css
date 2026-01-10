@@ -56,7 +56,14 @@ nav{
     nav .Logo img{
       height:42px;display:block
     }
-
+    nav .Logo strong{
+      font-size:28px;
+      font-weight:700;
+    }
+    nav .Logo:hover{
+      text-decoration: none;
+      transition:.25s;
+    }
   nav .nav_links{
     font-size:18px;
   }
