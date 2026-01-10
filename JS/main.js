@@ -27,19 +27,50 @@ document.querySelectorAll('a[href]').forEach(link=>{
     });
   }
 });
+// Fix infinite loader on browser back button (bfcache)
+window.addEventListener("pageshow", function(event){
+  if(event.persisted){
+    const loader = document.getElementById("loader");
+    if(loader) loader.classList.remove("active");
+  }
+});
+
 // End of Page-loader/link interceptor
 //-------------------------------------------------------------------------------------------
 
-// Popup form JS
+// Popup form JS (SAFE VERSION)
 function openPopup(service){
-  document.getElementById("serviceName").innerText = service;
-  document.getElementById("waLink").href =
+  const popup = document.getElementById("popup");
+  const serviceName = document.getElementById("serviceName");
+  const waLink = document.getElementById("waLink");
+
+  if(!popup || !serviceName || !waLink) return;
+
+  serviceName.innerText = service;
+  waLink.href =
    "https://wa.me/918807678247?text=Hi Sathish, I’m interested in your " + encodeURIComponent(service) + " service.";
-  document.getElementById("popup").style.display="flex";
+  popup.style.display="flex";
 }
-document.getElementById("popup").addEventListener("click",e=>{
-  if(e.target.id==="popup") e.target.style.display="none";
-});
+
+const popup = document.getElementById("popup");
+if(popup){
+  popup.addEventListener("click", e=>{
+    if(e.target.id==="popup") popup.style.display="none";
+  });
+}
+
 // End of Popup form JS
 //-------------------------------------------------------------------------------------------
 
+
+// Resume download JS
+function forceDownload(){
+  const a = document.createElement("a");
+  a.href = "files/Sathish-Sekar-Resume.pdf";
+  a.setAttribute("download","Sathish-Sekar-Resume.pdf");
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+// End of Resume download JS
+//-------------------------------------------------------------------------------------------
