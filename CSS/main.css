@@ -235,6 +235,18 @@ nav{
 }
 
 /* =====================
+trust strip (Index)
+=======================*/
+.trust-strip{
+  background: #7b1717;
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  font-size: 15px;
+  letter-spacing: .5px;
+}
+
+/* =====================
    SKILLS (Index)
 ===================== */
 
@@ -271,6 +283,40 @@ nav{
   cursor:pointer;
   transition: all 0.3s ease-in-out;
   box-shadow:15px 15px 15px 15px #7b1717(0.3,0.3,0.3,0.3);
+}
+
+/* Whatsapp CTA Box */
+.cta-box{
+  max-width:900px;
+  margin:80px auto;
+  padding:50px 40px;
+  background:#fbf4d7;
+  border:3px solid #7b1717;
+  border-radius:24px;
+  text-align:center;
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+.cta-box h2{
+  color:#7b1717;
+  font-size:32px;
+  margin-bottom:14px;
+}
+.cta-box p{
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:28px;
+}
+.cta-btn{
+  display:inline-block;
+  background:#7b1717;
+  color:#fff;
+  padding:14px 34px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+}
+.cta-btn:hover{
+  background:#5b0f0f;
 }
 
 /* =====================
@@ -622,6 +668,37 @@ button:hover{
   font-size:18px;
   opacity:.5;
 }
+
+/* Footer PDF Button */
+/*
+.footer-pdf{
+  text-align:center;
+  margin-top:40px;
+}
+.pdf-btn{
+  display:inline-block;
+  background:#fbf4d7;
+  color:#7b1717;
+  padding:12px 26px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+  border:2px solid #661313;
+}
+.footer-pdf a{
+  display:inline-block;
+  background:#fbf4d7;
+  color:#7b1717;
+  padding:12px 26px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+  border:2px solid #661313;
+}
+.pdf-btn:hover{
+  background:#7b1717;
+  color:#fff;
+} */
 
 /* =====================
    WHATSAPP FLOAT
